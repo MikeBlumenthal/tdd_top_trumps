@@ -30,4 +30,11 @@ describe( 'Player', function(){
     assert.deepStrictEqual( actual, [card1] );
   });
 
+  it("should be able to select a category on the card in play", function(){
+    player.cardInPlay = [card1];
+    player.selectCategory('strength');
+    const actual = player.categoryInPlay;
+    assert.strictEqual( actual, 'strength' );
+  });
+
 } );

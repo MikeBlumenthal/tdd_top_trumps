@@ -14,18 +14,18 @@ describe('Card', function (){
   });
 
   it('should have an intelligence value', function() {
-    const actual = card.int;
+    const actual = card.intelligence;
     assert.strictEqual(actual, 10);
   });
 
   it('should have a strength value', function() {
-    const actual = card.str;
+    const actual = card.strength;
     assert.strictEqual(actual, 5);
   });
 
   it('should have an agility value', function() {
-    const actual = card.agi;
+    const actual = card.agility;
     assert.strictEqual(actual, 6);
   });
-  
+
 });
